@@ -8,15 +8,15 @@ def piglatinify(s):
         elif (word not in punct):
            word = word + "ay"
         i = 0
+        puncs = ""
+        shifted  = ""
         for ltr in word:
             if ltr in punct:
                 punc = word[i]
-                p
+                puncs += punc
                 shifted = word.replace(punc,"",1)
-                shifted += punc
-                print(">>>>>" + shifted)
             i += 1
-        
+        word = shifted + puncs
         translated += word + " "
     print(translated)
         
