@@ -1,3 +1,4 @@
+import random
 l = []
 l2 = ['a','b','c','d']
 
