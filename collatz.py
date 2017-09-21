@@ -14,11 +14,10 @@ def collatzSequence():
         except ValueError:
             print("Invalid Input! Please enter a number.")
             nan = True
-    print(num)
+    print("Collatz Sequence \n" + str(num))
     while num != 1:
         num = collatz(num)
         print(num)
         
-    
-        
+
 collatzSequence()
