@@ -2,16 +2,6 @@ import random
 import re
 
 story = """ There once was a NOUN who VERB. He was very ADJECTIVE. He VERB very well.   """
-nouns = [ "chair",  "head", "desk", "table", "tree", "paper", "towel","file" ]
-verbs = [ "kill" , "coded" , "ran" , "jumping", "swim" , "watch" , "existed"]
-adjectives = [ "loud" , "ugly" , "beautiful" , "green","old"]
-keywords = ["NOUN" , "VERB" , "ADJECTIVE" , "PRONOUN"]
-
-
-import random
-import re
-
-story = """ There once was a NOUN who VERB. He was very ADJECTIVE. He VERB very well.   """
 nouns = ["chair", "head", "desk", "table", "tree", "paper", "towel", "file"]
 verbs = ["kill", "coded", "ran", "jumping", "swim", "watch", "existed"]
 adjectives = ["loud", "ugly", "beautiful", "green", "old"]
