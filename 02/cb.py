@@ -40,3 +40,4 @@ def string_splosion(str):
 def cigar_party(cigars, is_weekend):
   return cigars >= 40 and ( is_weekend or cigars <= 60)
 
+#caught_speeding (prob/p137202)
