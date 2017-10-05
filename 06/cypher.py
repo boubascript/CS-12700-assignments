@@ -4,7 +4,6 @@ alphabet = {"a":0.08167 , "b":0.01492, "c":0.02782 , "d":0.04253 , "e": 0.12702 
             "s":0 , "t":0 , "u":0 , "v":0 , "w":0 , "x":0 , "y":0 , "z":0 }
 alpha = list(alphabet.keys())
 real_stats = list(alphabet.values())
-real_stats = [0.08167,0.01492,0.02782,0.04253,0.12702,0.02228,0.02015,0.06094,0.06966,0.00153,0.00772,0.04025,0.02406,0.06749,0.07507,0.01929,0.00095,0.05987,0.06327,0.09056,0.02758,0.00978,0.02360,0.00150,0.01974,0.00074]
 puncts = [" ",".",";",":",",","?","!","(",")"]
 
 #My own Helper Functions--------
@@ -69,6 +68,10 @@ def file_encode(file,r):
 
 def full_file_encode(file):
     return full_encode(file_encode(file,0))
+    
+print(full_encode("Alert: This message encrypted with a weak cypher!"))
+
+print(full_file_encode("cyphertest.txt"))
 
 
 def smaller(l1,l2):
@@ -118,11 +121,4 @@ def decode(s):
     return allrotations[distances.index(min(distances))]
 
 v2 = build_frequency_vector("hello")      
-
-def testcypher():
-    encoded = file_encode("cyphertest.txt",23)
-    decoded = decode(encoded)
-    print("Encoded: " + encoded)
-    print("decoded: " + decoded)
-    
-testcypher()
+print(distance(real_stats,v2))
