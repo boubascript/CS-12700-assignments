@@ -26,16 +26,12 @@ def max(l):
 def mode(l):
     counts = []
     numbers = []
-    numbers.append(l[0])
-    counts.append(0)
     for num in l:
-        if num in numbers:
-            counts[numbers.index(num)] += 1
-        else:
+        if num not in numbers:
+            counts.append(freq(num,l))
             numbers.append(num)
-            counts.append(1)
-    #print(numbers)
-    #print(counts)
+    print(numbers)
+    print(counts)
     return numbers[counts.index(max(counts))]
 
-#print(mode([3,2,2,1,3,4,5,4,3,4,3]))
+print(mode([3,2,2,1,3,4,5,4,3,4,3]))
