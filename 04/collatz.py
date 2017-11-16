@@ -6,11 +6,17 @@ def collatz(n):
     return n
 
 def collatzSequence():
-    num = int(input("Enter Number: "))
-    print(num)
+    nan = True
+    while(nan):
+        try:
+            num = int(input("Collatz Sequence \nEnter Number:\n"))
+            nan = False
+        except ValueError:
+            print("Invalid Input! Please enter a number.")
+            nan = True
     while num != 1:
         num = collatz(num)
         print(num)
         
-        
+
 collatzSequence()
