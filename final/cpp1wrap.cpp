@@ -37,8 +37,8 @@ int ribbon_needed(int l, int w, int h){
 
 int main(){
   // add your code to test things here
-  std::cout << paper_needed(5,8,3)<< "\n";
-  std::cout << ribbon_needed(8,3,5)<< "\n";
+  std::cout << "Paper Needed: " << paper_needed(5,8,3)<< "\n";
+  std::cout << "Ribbon Needed: " << ribbon_needed(8,3,5)<< "\n";
 
   return 0;
 }
